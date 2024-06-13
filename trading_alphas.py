@@ -127,13 +127,7 @@ def main():
     # Save the dataset with positions and PnL
     df_with_pnl.to_csv('./asset_1_with_positions_and_pnl.csv', index=False)
 
-    # Plot results (disabled due to OpenGL errors)
-    # plt.figure(figsize=(12, 6))
-    # plt.plot(df_with_pnl['price'], label='Price')
-    # plt.plot(df_with_pnl['pnl'].cumsum(), label='Cumulative PnL')
-    # plt.legend()
-    # plt.title('Price and Cumulative PnL Over Time')
-    # plt.show()
+    
 
 if __name__ == "__main__":
     main()
